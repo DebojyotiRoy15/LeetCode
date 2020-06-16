@@ -1,3 +1,7 @@
+# https://leetcode.com/problems/palindrome-number
+# O(1) time
+ 
+
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         rev = str(x)[::-1]
