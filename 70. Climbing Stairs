@@ -1,0 +1,16 @@
+#https://leetcode.com/problems/climbing-stairs/
+#O(n)
+
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        if (n == 1):
+            return 1
+        elif (n ==2):
+            return 2
+        else:
+            list1 = [0]*n
+            list1[0] = 1
+            list1[1] = 2;
+            for i in range(2,n):
+                list1[i] = list1[i - 1] + list1[i - 2]
+            return list1[n - 1]
